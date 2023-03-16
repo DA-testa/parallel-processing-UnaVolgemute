@@ -29,16 +29,13 @@ def main():
     # n - thread count 
     # m - job count    
     # TODO: print out the results, each pair in it's own line
+    
     n, m = map(int, input().split())
     data = list(map(int, input().split()))
     result = parallel_processing(n, m, data)
     
     for pair in result:
         print(pair[0], pair[1])
-    
-
-
-
 
 if __name__ == "__main__":
     main()
